@@ -11,31 +11,54 @@
       </a>
       <section>
         <h2>Поиск</h2>
-        <input type="text" placeholder="Поиск по сайту">
+        <form action="" method="GET">
+          <label> <!-- стилями добавлю иконку -->
+            <input type="text" name="search" placeholder="Поиск по сайту">
+          </label>
+          <button type="button">найти</button>
+        </form>
       </section>
       <section>
         <h2>Системные</h2>
         <ul>
-          <li><a href="blank.html">Войти</a></li>
-          <li><a href="blank.html">Сравнить</a></li>
-          <li><a href="blank.html">Корзина</a></li>
+          <li>
+            <a href="blank.html">
+              Войти
+            </a>
+          </li>
+          <li>
+            <a href="blank.html">
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="blank.html">
+              Корзина
+            </a>
+          </li>
         </ul>
       </section>
       <section>
         <h2>Каталог товаров</h2>
         <ul>
-          <li><a href="blank.html">Каталог товаров</a></li>
+          <li>
+            <div>
+              <a href="catalog.html">Каталог товаров</a>
+              <button type="button"></button> <!-- иконку добавлю через стили -->
+            </div>
+            <div>
+              <!-- здесь будет выпаюащий список -->
+            </div>
+          </li>
         </ul>
       </section>
       <section>
         <h2>Навигация</h2>
-        <nav>
-          <ul>
-            <li><a href="blank.html">Доставка</a></li>
-            <li><a href="blank.html">Гарантия</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>
-        </nav>
+        <ul>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Гарантия</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
       </section>
     </header>
     <main>
@@ -66,7 +89,7 @@
       </div>
       <div>
         <section> 
-          <div>
+          <form>
             <ul>
               <li>
                 <h3>Стоимость</h3>
@@ -104,11 +127,11 @@
               </li>
             </ul>
             <button type="button">показать</button>
-          </div>
+          </form>
           <div>
             <article>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="img">
+                <img src="img/item_1_1.jpg" alt="img">
                 <button type="button">в корзину</button>
                 <button type="button">Добавить к сравнению</button>
               </div>
@@ -117,7 +140,7 @@
             </article>
             <article>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="img">
+                <img src="img/item_1_2.jpg" alt="img">
                 <button type="button">в корзину</button>
                 <button type="button">Добавить к сравнению</button>
               </div>
@@ -126,7 +149,7 @@
             </article>
             <article>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="img">
+                <img src="img/item_1_3.jpg" alt="img">
                 <button type="button">в корзину</button>
                 <button type="button">Добавить к сравнению</button>
               </div>
@@ -135,7 +158,7 @@
             </article>
             <article>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="img">
+                <img src="img/item_1_4.jpg" alt="img">
                 <button type="button">в корзину</button>
                 <button type="button">Добавить к сравнению</button>
               </div>
@@ -158,9 +181,21 @@
     <footer>
       <h2>device</h2>
       <ul>
-        <li><a href="blank.html">Войти</a></li>
-        <li><a href="blank.html">Сравнить</a></li>
-        <li><a href="blank.html">Корзина</a></li>
+        <li>
+          <a href="blank.html">
+            Войти
+          </a>
+        </li>
+        <li>
+          <a href="blank.html">
+            Сравнить
+          </a>
+        </li>
+        <li>
+          <a href="blank.html">
+            Корзина
+          </a>
+        </li>
       </ul>
       <div>
         <p>г. Москва, ул. Строителей, 15</p>
@@ -174,11 +209,11 @@
       <div>
         <div></div>
         <ul>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="facebook"></a></li>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="instagram"></a></li>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="twitter"></a></li>
+          <li><a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="img/instagram.svg" alt="instagram"></a></li>
+          <li><a href="https://twitter.com/"><img src="img/twitter.svg" alt="twitter"></a></li>
         </ul>
-        <img src="https://via.placeholder.com/150x100" alt="icon">
+        <a href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" alt="htmlacademy"></a>
       </div>
     </footer>
   </body>

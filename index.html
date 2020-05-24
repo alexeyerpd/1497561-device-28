@@ -3,28 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header>
-      <a  href="blank.html">
+      <a href="">
         <h1>device</h1>
       </a>
       <section>
         <h2>Поиск</h2>
-        <input type="text" placeholder="Поиск по сайту">
+        <form action="" method="GET">
+          <label> <!-- стилями добавлю иконку -->
+            <input type="text" name="search" placeholder="Поиск по сайту">
+          </label>
+          <button type="button">найти</button>
+        </form>
       </section>
       <section>
         <h2>Системные</h2>
         <ul>
-          <li><a href="blank.html">Войти</a></li>
-          <li><a href="blank.html">Сравнить</a></li>
-          <li><a href="blank.html">Корзина</a></li>
+          <li>
+            <a href="blank.html">
+              Войти
+            </a>
+          </li>
+          <li>
+            <a href="blank.html">
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="blank.html">
+              Корзина
+            </a>
+          </li>
         </ul>
       </section>
       <section>
         <h2>Каталог товаров</h2>
         <ul>
-          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li>
+            <div>
+              <a href="catalog.html">Каталог товаров</a>
+              <button type="button"></button> <!-- иконку добавлю через стили -->
+            </div>
+            <div>
+              <!-- здесь будет выпаюащий список -->
+            </div>
+          </li>
         </ul>
       </section>
       <section>
@@ -39,7 +65,7 @@
     <main>
       <section>
         <h2>Слайдер</h2>
-        <img src="https://via.placeholder.com/150x100" alt="img">
+        <img src="img/slider_1_1.png" alt="Селфи палка">
         <div>
           <span>01</span>
           <h3>Делай селфи,<br>  
@@ -76,7 +102,7 @@
           <li>
             <a  href="blank.html">
               <figure>
-                <img src="https://via.placeholder.com/150x100" alt="Виртуальная 
+                <img src="img/vr.svg" alt="Виртуальная 
                 реальность">
                 <figcaption>Виртуальная 
                   реальность</figcaption>
@@ -86,7 +112,7 @@
           <li>
             <a  href="blank.html">
               <figure>
-                <img src="https://via.placeholder.com/150x100" alt="Моноподы 
+                <img src="img/selfie.svg" alt="Моноподы 
                 для селфи">
                 <figcaption>Моноподы 
                   для селфи</figcaption>
@@ -96,7 +122,7 @@
           <li>
             <a  href="blank.html">
               <figure>
-                <img src="https://via.placeholder.com/150x100" alt="Экшн-камеры">
+                <img src="img/camera.svg" alt="Экшн-камеры">
                 <figcaption>Экшн-камеры</figcaption>
               </figure>
             </a>
@@ -104,7 +130,7 @@
           <li>
             <a  href="blank.html">
               <figure>
-                <img src="https://via.placeholder.com/150x100" alt="Фитнес-браслеты">
+                <img src="img/bracelet.svg" alt="Фитнес-браслеты">
                 <figcaption>Фитнес-браслеты</figcaption>
               </figure>
             </a>
@@ -112,7 +138,7 @@
           <li>
             <a  href="blank.html">
               <figure>
-                <img src="https://via.placeholder.com/150x100" alt="Умные часы">
+                <img src="img/watch.svg" alt="Умные часы">
                 <figcaption>Умные часы</figcaption>
               </figure>
             </a>
@@ -120,7 +146,7 @@
           <li>
             <a  href="blank.html">
               <figure>
-                <img src="https://via.placeholder.com/150x100" alt="Квадрокоптеры">
+                <img src="img/quadcopter.svg" alt="Квадрокоптеры">
                 <figcaption>Квадрокоптеры</figcaption>
               </figure>
             </a>
@@ -141,16 +167,17 @@
               подъезду совершенно бесплатно! Ведь мы неплохо 
               заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <img src="https://via.placeholder.com/150x100" alt="img">
+          <img src="img/delivery.svg" alt="Логотип службы доставки">
         </div>
       </section>
       <section>
         <h2>Логотипы</h2>
         <ul>
-          <li><a  href="blank.html"><img src="https://via.placeholder.com/150x100" alt="1"></a></li>
-          <li><a  href="blank.html"><img src="https://via.placeholder.com/150x100" alt="2"></a></li>
-          <li><a  href="blank.html"><img src="https://via.placeholder.com/150x100" alt="3"></a></li>
-          <li><a  href="blank.html"><img src="https://via.placeholder.com/150x100" alt="4"></a></li>
+          <!-- изображения через стили -->
+          <li><a href="https://www.dji.com/"></a></li>
+          <li><a href="http://www.sp-gadgets.com/"></a></li>
+          <li><a href="https://gopro.com/"></a></li>
+          <li><a href="https://www.vivo.com/"></a></li>
         </ul>
       </section>
       <section>
@@ -180,9 +207,21 @@
     <footer>
       <h2>device</h2>
       <ul>
-        <li><a href="blank.html">Войти</a></li>
-        <li><a href="blank.html">Сравнить</a></li>
-        <li><a href="blank.html">Корзина</a></li>
+        <li>
+          <a href="blank.html">
+            Войти
+          </a>
+        </li>
+        <li>
+          <a href="blank.html">
+            Сравнить
+          </a>
+        </li>
+        <li>
+          <a href="blank.html">
+            Корзина
+          </a>
+        </li>
       </ul>
       <div>
         <p>г. Москва, ул. Строителей, 15</p>
@@ -196,12 +235,13 @@
       <div>
         <div></div>
         <ul>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="facebook"></a></li>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="instagram"></a></li>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="twitter"></a></li>
+          <li><a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="img/instagram.svg" alt="instagram"></a></li>
+          <li><a href="https://twitter.com/"><img src="img/twitter.svg" alt="twitter"></a></li>
         </ul>
-        <img src="https://via.placeholder.com/150x100" alt="icon">
+        <a href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" alt="htmlacademy"></a>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
