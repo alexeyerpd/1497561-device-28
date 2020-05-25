@@ -10,8 +10,8 @@
         <h1>device</h1>
       </a>
       <section>
-        <h2>Поиск</h2>
-        <form action="" method="GET">
+        <h2 class="visually-hidden">Поиск</h2>
+        <form action="http://test.ru" method="GET">
           <label> <!-- стилями добавлю иконку -->
             <input type="text" name="search" placeholder="Поиск по сайту">
           </label>
@@ -19,15 +19,19 @@
         </form>
       </section>
       <section>
-        <h2>Системные</h2>
+        <h2 class="visually-hidden">Системные</h2>
         <ul>
           <li><a href="blank.html">Войти</a></li>
+          <li>
+            <a href="blank.html">Валентин Петухов</a>
+            <button type="button">Выйти</button>
+          </li>
           <li><a href="blank.html">Сравнить</a></li>
           <li><a href="blank.html">Корзина</a></li>
         </ul>
       </section>
       <section>
-        <h2>Каталог товаров</h2>
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul>
           <li>
             <div>
@@ -35,13 +39,20 @@
               <button type="button"></button> <!-- иконку добавлю через стили -->
             </div>
             <div>
-              <!-- здесь будет выпаюащий список -->
+              <ul>
+                <li><a href="catalog.html">Виртуальная реальность</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="catalog.html">Экшн-камеры</a></li>
+                <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                <li><a href="catalog.html">Умные часы</a></li>
+                <li><a href="catalog.html">Квадрокоптер</a></li>
+              </ul>
             </div>
           </li>
         </ul>
       </section>
       <section>
-        <h2>Навигация</h2>
+        <h2 class="visually-hidden">Навигация</h2>
         <ul>
           <li><a href="blank.html">Доставка</a></li>
           <li><a href="blank.html">Гарантия</a></li>
@@ -81,6 +92,22 @@
             <ul>
               <li>
                 <h3>Стоимость</h3>
+                <div>
+                  <div class="range">
+                    <div class="range_track">
+                      <button class="range_left" type="button">
+                        <output class="range_output-left"></output>
+                      </button>
+                      <div class="range_indicator"></div>
+                      <button class="range_right" type="button">
+                        <output class="range_output-right"></output>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="test1">
+                    <div class="test2"></div>
+                  </div>
+                </div>
               </li>
               <li>
                 <h3>Цвет</h3>
@@ -186,7 +213,7 @@
         </li>
       </ul>
       <div>
-        <p>г. Москва, ул. Строителей, 15</p>
+        <address>г. Москва, ул. Строителей, 15</address>
         <ul>
           <li><a  href="blank.html">доставка</a></li>
           <li><a  href="blank.html">гарантия</a></li>

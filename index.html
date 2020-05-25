@@ -11,8 +11,8 @@
         <h1>device</h1>
       </a>
       <section>
-        <h2>Поиск</h2>
-        <form action="" method="GET">
+        <h2 class="visually-hidden">Поиск</h2>
+        <form action="http://test.ru" method="GET">
           <label> <!-- стилями добавлю иконку -->
             <input type="text" name="search" placeholder="Поиск по сайту">
           </label>
@@ -20,15 +20,19 @@
         </form>
       </section>
       <section>
-        <h2>Системные</h2>
+        <h2 class="visually-hidden">Системные</h2>
         <ul>
           <li><a href="blank.html">Войти</a></li>
+          <li>
+            <a href="blank.html">Валентин Петухов</a>
+            <button type="button">Выйти</button>
+          </li>
           <li><a href="blank.html">Сравнить</a></li>
           <li><a href="blank.html">Корзина</a></li>
         </ul>
       </section>
       <section>
-        <h2>Каталог товаров</h2>
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul>
           <li>
             <div>
@@ -36,13 +40,20 @@
               <button type="button"></button> <!-- иконку добавлю через стили -->
             </div>
             <div>
-              <!-- здесь будет выпаюащий список -->
+              <ul>
+                <li><a href="catalog.html">Виртуальная реальность</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="catalog.html">Экшн-камеры</a></li>
+                <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                <li><a href="catalog.html">Умные часы</a></li>
+                <li><a href="catalog.html">Квадрокоптер</a></li>
+              </ul>
             </div>
           </li>
         </ul>
       </section>
       <section>
-        <h2>Навигация</h2>
+        <h2 class="visually-hidden">Навигация</h2>
         <ul>
           <li><a href="blank.html">Доставка</a></li>
           <li><a href="blank.html">Гарантия</a></li>
@@ -52,7 +63,7 @@
     </header>
     <main>
       <section>
-        <h2>Слайдер</h2>
+        <h2 class="visually-hidden">Слайдер</h2>
         <img src="img/slider_1_1.png" alt="Селфи палка">
         <div>
           <span>01</span>
@@ -85,7 +96,7 @@
         </div>
       </section>
       <section>
-        <h2>Популярное</h2>
+        <h2 class="visually-hidden">Популярное</h2>
         <ul>
           <li>
             <a  href="blank.html">
@@ -142,7 +153,7 @@
         </ul>
       </section>
       <section>
-        <h2>Сервисы</h2>
+        <h2 class="visually-hidden">Сервисы</h2>
         <ul>
           <li><button type="button">доставка</button></li>
           <li><button type="button">гарантия</button></li>
@@ -159,7 +170,7 @@
         </div>
       </section>
       <section>
-        <h2>Логотипы</h2>
+        <h2 class="visually-hidden">Логотипы</h2>
         <ul>
           <!-- изображения через стили -->
           <li><a href="https://www.dji.com/"></a></li>
@@ -169,7 +180,7 @@
         </ul>
       </section>
       <section>
-        <h2>Инфо</h2>
+        <h2 class="visually-hidden">Инфо</h2>
         <article>
           <h3>О нас</h3>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, 
@@ -190,6 +201,10 @@
           <!-- google map | img -->
           <a href="blank.html">напишите нам</a>
         </article>
+        <div>
+          <h2 class="visually-hidden">Всплывающее окно с увеличенной картой</h2>
+          <img src="img/map-big-1.png" alt="Место расположения магазина">
+        </div>
       </section>
     </main>
     <footer>
@@ -212,7 +227,7 @@
         </li>
       </ul>
       <div>
-        <p>г. Москва, ул. Строителей, 15</p>
+        <address>г. Москва, ул. Строителей, 15</address>
         <ul>
           <li><a  href="blank.html">доставка</a></li>
           <li><a  href="blank.html">гарантия</a></li>
@@ -230,6 +245,23 @@
         <a href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" alt="htmlacademy"></a>
       </div>
     </footer>
+    <div>
+      <h2 class="visually-hidden">Форма</h2>
+      <button><img src="img/close.svg" alt="Кнопка закрыть"></button>
+      <form action="http://zaglushka.ru">
+        <label for="field-name">Ваше имя:
+          <input id="field-name" type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label for="field-email">Ваше e-mail:
+          <input id="field-email" type="text" name="email" placeholder="email@example.com">
+        </label>
+        <label for="field-text">Текст письма:
+          <textarea id="field-text" type="text" name="email" placeholder="В свободной форме"></textarea>
+        </label>
+      </form>
+      <button type="button">Отправить</button>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
+
