@@ -3,263 +3,269 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header>
-      <a href="">
+    <header class="header">
+      <a class="logo">
         <h1>device</h1>
       </a>
-      <section>
+      <section class="search">
         <h2 class="visually-hidden">Поиск</h2>
-        <form action="http://test.ru" method="GET">
-          <label> <!-- стилями добавлю иконку -->
-            <input type="text" name="search" placeholder="Поиск по сайту">
-          </label>
-          <button type="button">найти</button>
+        <form action="http://test.ru" method="GET" class="search__form">
+          <label class="search__label" for="search"></label> <!-- стилями добавлю иконку -->
+          <input id="search" class="search__input" type="text" name="search" placeholder="Поиск по сайту">
+          <button type="button" class="search__button">Найти</button>
+          <div class="search__divide"></div>
         </form>
       </section>
-      <section>
+      <section class="header-menu menu">
         <h2 class="visually-hidden">Системные</h2>
-        <ul>
-          <li><a href="blank.html">Войти</a></li>
-          <li>
-            <a href="blank.html">Валентин Петухов</a>
-            <button type="button">Выйти</button>
-          </li>
-          <li><a href="blank.html">Сравнить</a></li>
-          <li><a href="blank.html">Корзина</a></li>
+        <ul class="unstyled-list header-menu__list menu__list">
+          <li class="header-menu__item"><a class="header-menu__link effect-1" href="blank.html">Войти</a></li>
+          <li class="header-menu__item"><a class="header-menu__link effect-1" href="blank.html">Сравнить</a></li>
+          <li class="header-menu__item"><a class="header-menu__link effect-1" href="blank.html">Корзина</a></li>
         </ul>
       </section>
-      <section>
-        <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul>
-          <li>
-            <div>
-              <a href="catalog.html">Каталог товаров</a>
-              <button type="button"></button> <!-- иконку добавлю через стили -->
-            </div>
-            <div>
-              <ul>
-                <li><a href="catalog.html">Виртуальная реальность</a></li>
-                <li><a href="catalog.html">Моноподы для селфи</a></li>
-                <li><a href="catalog.html">Экшн-камеры</a></li>
-                <li><a href="catalog.html">Фитнес-браслеты</a></li>
-                <li><a href="catalog.html">Умные часы</a></li>
-                <li><a href="catalog.html">Квадрокоптер</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Навигация</h2>
-        <ul>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Гарантия</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
+      <section class="header-nav">
+        <div class="header-catalog">
+          <h2 class="visually-hidden">Каталог товаров</h2>
+          <a class="header-catalog__link effect-1" href="catalog.html">Каталог товаров</a> 
+          <div class="popup header-catalog__popup">
+            <ul class="unstyled-list popup__list">
+              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Виртуальная реальность</a></li>
+              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Моноподы для селфи</a></li>
+              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Экшн-камеры</a></li>
+              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Фитнес-браслеты</a></li>
+              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Умные часы</a></li>
+              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Квадрокоптер</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navigation">
+          <h2 class="visually-hidden">Навигация</h2>
+          <ul class="unstyled-list navigation__list">
+            <li class="navigation__item"><a href="blank.html" class="navigation__link effect-1">Доставка</a></li>
+            <li class="navigation__item"><a href="blank.html" class="navigation__link effect-1">Гарантия</a></li>
+            <li class="navigation__item"><a href="blank.html" class="navigation__link effect-1">Контакты</a></li>
+          </ul>
+        </div>      
       </section>
     </header>
     <main>
-      <section>
+      <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
-        <img src="img/slider_1_1.png" alt="Селфи палка">
-        <div>
-          <span>01</span>
-          <h3>Делай селфи,<br>  
+        <div class="slider__image-wrap">
+          <img src="img/slider_1_1.png" alt="Селфи палка" width="384" height="486">
+        </div>
+        <div class="slider__content">
+          <span class="slider__number">01</span>
+          <h3 class="slider__title">Делай селфи,<br>  
             как Бен Стиллер!</h3>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. 
+          <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. 
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <div>
-            <button>подробнее</button>
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
+            <button class="btn slider__button effect-2">Подробнее</button>
+            <ul class="unstyled-list carousel">
+              <li class="carousel__item">1</li>
+              <li class="carousel__item">2</li>
+              <li class="carousel__item">3</li>
             </ul>
           </div>
-          <ul>
-            <li>
-              <h4>8,5 м</h4>
-              <p>Длина палки</p>
+          <ul class="unstyled-list slider__list">
+            <li class="slider__item">
+              <p class="slider__value">8,5 м</p>
+              <h4 class="slider__param">Длина палки</h4>
             </li>
-            <li>
-              <h4>5 кг</h4>
-              <p>Вес палки</p>
+            <li class="slider__item">
+              <p class="slider__value">5 кг</p>
+              <h4 class="slider__param">Вес палки</h4>
             </li>
-            <li>
-              <h4>Карбон</h4>
-              <p>Материал</p>
+            <li class="slider__item">
+              <p class="slider__value">Карбон</p>
+              <h4 class="slider__param">Материал</h4>
             </li>
           </ul>
         </div>
       </section>
-      <section>
+      <section class="popular">
         <h2 class="visually-hidden">Популярное</h2>
-        <ul>
-          <li>
-            <a  href="blank.html">
-              <figure>
-                <img src="img/vr.svg" alt="Виртуальная 
-                реальность">
-                <figcaption>Виртуальная 
+        <ul class="unstyled-list popular__list">
+          <li class="popular__item">
+            <a class="popular__link" href="blank.html">
+              <figure class="popular__content-wrap">
+                <div class="popular__img-wrap">
+                  <img class="popular__img" src="img/vr.svg" alt="Виртуальная реальность">
+                </div>
+                <figcaption class="popular__description">Виртуальная 
                   реальность</figcaption>
               </figure>
             </a>
           </li>
-          <li>
-            <a  href="blank.html">
-              <figure>
-                <img src="img/selfie.svg" alt="Моноподы 
-                для селфи">
-                <figcaption>Моноподы 
+          <li class="popular__item">
+            <a class="popular__link" href="blank.html">
+              <figure class="popular__content-wrap">
+                <div class="popular__img-wrap">
+                  <img class="popular__img" src="img/selfie.svg" alt="Моноподы для селфи"> 
+                </div>
+                <figcaption class="popular__description"  >Моноподы 
                   для селфи</figcaption>
               </figure>
             </a>
           </li>
-          <li>
-            <a  href="blank.html">
-              <figure>
-                <img src="img/camera.svg" alt="Экшн-камеры">
-                <figcaption>Экшн-камеры</figcaption>
+          <li class="popular__item">
+            <a class="popular__link" href="blank.html">
+              <figure class="popular__content-wrap">
+                <div class="popular__img-wrap">
+                  <img class="popular__img" src="img/camera.svg" alt="Экшн-камеры">
+                </div>
+                <figcaption class="popular__description">Экшн-камеры</figcaption>
               </figure>
             </a>
           </li>
-          <li>
-            <a  href="blank.html">
-              <figure>
-                <img src="img/bracelet.svg" alt="Фитнес-браслеты">
-                <figcaption>Фитнес-браслеты</figcaption>
+          <li class="popular__item">
+            <a class="popular__link" href="blank.html">
+              <figure class="popular__content-wrap">
+                <div class="popular__img-wrap">
+                  <img class="popular__img" src="img/bracelet.svg" alt="Фитнес-браслеты">
+                </div>
+                <figcaption class="popular__description">Фитнес-браслеты</figcaption>
               </figure>
             </a>
           </li>
-          <li>
-            <a  href="blank.html">
-              <figure>
-                <img src="img/watch.svg" alt="Умные часы">
-                <figcaption>Умные часы</figcaption>
+          <li class="popular__item">
+            <a class="popular__link" href="blank.html">
+              <figure class="popular__content-wrap">
+                <div class="popular__img-wrap">
+                  <img class="popular__img" src="img/watch.svg" alt="Умные часы">
+                </div>
+                <figcaption class="popular__description">Умные часы</figcaption>
               </figure>
             </a>
           </li>
-          <li>
-            <a  href="blank.html">
-              <figure>
-                <img src="img/quadcopter.svg" alt="Квадрокоптеры">
-                <figcaption>Квадрокоптеры</figcaption>
+          <li class="popular__item">
+            <a class="popular__link" href="blank.html">
+              <figure class="popular__content-wrap">
+                <div class="popular__img-wrap">
+                  <img class="popular__img" src="img/quadcopter.svg" alt="Квадрокоптеры">
+                </div>
+                <figcaption class="popular__description">Квадрокоптеры</figcaption>
               </figure>
             </a>
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="visually-hidden">Сервисы</h2>
-        <ul>
-          <li><button type="button">доставка</button></li>
-          <li><button type="button">гарантия</button></li>
-          <li><button type="button">кредит</button></li>
-        </ul>
-        <div>
-          <div>
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему 
-              подъезду совершенно бесплатно! Ведь мы неплохо 
-              заработаем, поднимая его на ваш этаж.</p>
+      <div class="services-wrap">
+        <section class="services">
+          <h2 class="visually-hidden">Сервисы</h2>
+          <ul class="unstyled-list services__list">
+            <li class="services__item"><button class="btn services__button effect-3" type="button">Доставка</button></li>
+            <li class="services__item"><button class="btn services__button effect-3" type="button">Гарантия</button></li>
+            <li class="services__item"><button class="btn services__button effect-3" type="button">Кредит</button></li>
+          </ul>
+          <div class="services__content">
+            <div class="services__description">
+              <h3 class="services__title">Доставка</h3>
+              <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему 
+                подъезду совершенно бесплатно! Ведь мы неплохо 
+                заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <img class="services__img" src="img/delivery.svg" alt="Логотип службы доставки">
           </div>
-          <img src="img/delivery.svg" alt="Логотип службы доставки">
-        </div>
-      </section>
-      <section>
+        </section>
+      </div>
+      <section class="logotypes">
         <h2 class="visually-hidden">Логотипы</h2>
-        <ul>
+        <ul class="unstyled-list logotypes">
           <!-- изображения через стили -->
-          <li><a href="https://www.dji.com/"></a></li>
-          <li><a href="http://www.sp-gadgets.com/"></a></li>
-          <li><a href="https://gopro.com/"></a></li>
-          <li><a href="https://www.vivo.com/"></a></li>
+          <li class="logotypes__list"><a class="logotypes__link" href="https://www.dji.com/"></a></li>
+          <li class="logotypes__list"><a class="logotypes__link" href="http://www.sp-gadgets.com/"></a></li>
+          <li class="logotypes__list"><a class="logotypes__link" href="https://gopro.com/"></a></li>
+          <li class="logotypes__list"><a class="logotypes__link" href="https://www.vivo.com/"></a></li>
         </ul>
       </section>
-      <section>
+      <section class="about-cite">
         <h2 class="visually-hidden">Инфо</h2>
         <article>
-          <h3>О нас</h3>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, 
+          <h3 class="about-cite__title">О нас</h3>
+          <p class="about-cite__text">Огромный выбор гаджетов не оставит равнодушным гика, 
             который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки 
+          <p class="about-cite__text">Мы можем доставить ваш товар в самые отдаленные точки 
             России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul>
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+          <ul class="unstyled-list about-cite__list">
+            <li class="about-cite__item"><a class="about-cite__link" href="">Деловые линии</a></li>
+            <li class="about-cite__item"><a class="about-cite__link" href="">Автотрейдинг</a></li>
+            <li class="about-cite__item"><a class="about-cite__link" href="">ЖелДорЭкспедиция</a></li>
           </ul>
-          <a href="blank.html">Подробнее о нас</a>
+          <a class="btn about-cite__link-button effect-2" href="blank.html">Подробнее о нас</a>
         </article>
         <article>
-          <h3>Контакты</h3>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете 
+          <h3 class="about-cite__title">Контакты</h3>
+          <p class="about-cite__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете 
             проверить работоспособность покупки. Всякое бывает.</p>
           <!-- google map | img -->
-          <a href="blank.html">напишите нам</a>
+          <a class="btn about-cite__link-button effect-2" href="mailto:asd@test.ru">Напишите нам</a>
         </article>
         <div>
           <h2 class="visually-hidden">Всплывающее окно с увеличенной картой</h2>
-          <img src="img/map-big-1.png" alt="Место расположения магазина">
+          <img src="img/map-big-1.png" alt="Место расположения магазина" width="994" height="593">
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <h2>device</h2>
-      <ul>
-        <li>
-          <a href="blank.html">
+      <ul class="unstyled-list footer-menu__list menu__list">
+        <li class="footer-menu__item">
+          <a class="footer-menu__link effect-4" href="blank.html">
             Войти
           </a>
         </li>
-        <li>
-          <a href="blank.html">
+        <li class="footer-menu__item">
+          <a class="footer-menu__link effect-4" href="blank.html">
             Сравнить
           </a>
         </li>
-        <li>
-          <a href="blank.html">
+        <li class="footer-menu__item">
+          <a class="footer-menu__link effect-4" href="blank.html">
             Корзина
           </a>
         </li>
       </ul>
       <div>
-        <address>г. Москва, ул. Строителей, 15</address>
-        <ul>
-          <li><a  href="blank.html">доставка</a></li>
-          <li><a  href="blank.html">гарантия</a></li>
-          <li><a  href="blank.html">кредит</a></li>
+        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+        <ul class="unstyled-list footer-nav__list">
+          <li class="footer-nav__item"><a class="footer-nav__link" href="blank.html">доставка</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="blank.html">гарантия</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="blank.html">кредит</a></li>
         </ul>
-        <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+        <p class="footer__tel">Тел.: <a class="footer__tel-link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
       </div>
       <div>
-        <div></div>
-        <ul>
-          <li><a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook"></a></li>
-          <li><a href="https://www.instagram.com/"><img src="img/instagram.svg" alt="instagram"></a></li>
-          <li><a href="https://twitter.com/"><img src="img/twitter.svg" alt="twitter"></a></li>
+        <div class="footer__decorate"></div>
+        <ul class="unstyled-list footer-social__list">
+          <li class="footer-social__item"><a class="footer-social__link" href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook"></a></li> <!-- эффект через свг -->
+          <li class="footer-social__item"><a class="footer-social__link" href="https://www.instagram.com/"><img src="img/instagram.svg" alt="instagram"></a></li>
+          <li class="footer-social__item"><a class="footer-social__link" href="https://twitter.com/"><img src="img/twitter.svg" alt="twitter"></a></li>
         </ul>
-        <a href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" alt="htmlacademy"></a>
+        <a class="footer__logo" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34"></a>
       </div>
     </footer>
-    <div>
+    <div class="write-us">
       <h2 class="visually-hidden">Форма</h2>
-      <button><img src="img/close.svg" alt="Кнопка закрыть"></button>
+      <button class="button-close"><img src="img/close.svg" alt="Кнопка закрыть"></button>
       <form action="http://zaglushka.ru">
-        <label for="field-name">Ваше имя:
-          <input id="field-name" type="text" name="name" placeholder="Имя Фамилия">
+        <label class="write-us__label" for="field-name">Ваше имя:
+          <input class="write-us__input" id="field-name" type="text" name="name" placeholder="Имя Фамилия">
         </label>
-        <label for="field-email">Ваше e-mail:
-          <input id="field-email" type="text" name="email" placeholder="email@example.com">
+        <label class="write-us__label" for="field-email">Ваше e-mail:
+          <input class="write-us__input" id="field-email" type="text" name="email" placeholder="email@example.com">
         </label>
-        <label for="field-text">Текст письма:
-          <textarea id="field-text" type="text" name="email" placeholder="В свободной форме"></textarea>
+        <label class="write-us__label" for="field-text">Текст письма:
+          <textarea class="write-us__area" id="field-text" type="text" name="email" placeholder="В свободной форме"></textarea>
         </label>
       </form>
-      <button type="button">Отправить</button>
+      <button class="btn effect-2" type="button">Отправить</button>
     </div>
     <script src="js/index.js"></script>
   </body>
