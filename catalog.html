@@ -100,36 +100,37 @@
                   </div>
                 </div>
               </li>
-              <li class="catalog-filter__item">
+              <li class="catalog-filter__item filter">
                 <h3 class="catalog-filter__title">Цвет</h3>
-                <ul class="unstyled-list">
-                  <li>
-                    <label><input type="checkbox" name="color" value="black">Черный</label>
+                <ul class="unstyled-list filter__list">
+                  <li class="filter__item">
+                    <input id="color-black" class="filter__input" type="checkbox" name="color" value="black">
+                    <label for="color-black" class="filter__label">Черный</label>
                   </li>
-                  <li>
-                    <label><input type="checkbox" name="color" value="white">Белый</label>
+                  <li class="filter__item">
+                    <input id="color-white" class="filter__input" type="checkbox" name="color" value="white">
+                    <label for="color-white" class="filter__label">Белый</label>
                   </li>
-                  <li>
-                    <label><input type="checkbox" name="color" value="blue">Синий</label>
+                  <li class="filter__item">
+                    <input id="color-blue" class="filter__input" type="checkbox" name="color" value="blue">
+                    <label for="color-blue" class="filter__label">Синий</label>
                   </li>
-                  <li>
-                    <label><input type="checkbox" name="color" value="red">Красный</label>
+                  <li class="filter__item">
+                    <input id="color-red" class="filter__input" type="checkbox" name="color" value="red">
+                    <label for="color-red" class="filter__label">Красный</label>
                   </li>
-                  <li>
-                    <label><input type="checkbox" name="color" value="pink">Розовый</label>
+                  <li class="filter__item">
+                    <input id="color-pink" class="filter__input" type="checkbox" name="color" value="pink" disabled>
+                    <label for="color-pink" class="filter__label">Розовый</label>
                   </li>
                 </ul>
               </li>
-              <li class="catalog-filter__item">
+              <li class="catalog-filter__item filter">
                 <h3 class="catalog-filter__title">Bluetooth</h3>
-                <label>
-                  <input type="radio" name="bluetooth" value="yes">
-                    Есть
-                </label>
-                <label>
-                  <input type="radio" name="bluetooth" value="no">
-                    Нет
-                </label>
+                <input id="bluetooth-yes" class="filter__input" type="radio" name="bluetooth" value="yes" disabled>
+                <label for="bluetooth-yes" class="filter__label">Есть</label>
+                <input id="bluetooth-no" class="filter__input" type="radio" name="bluetooth" value="no">
+                <label for="bluetooth-no" class="filter__label">Нет</label>
               </li>
             </ul>
             <button class="btn catalog-filter__button effect-2" type="button">Показать</button>
@@ -181,13 +182,13 @@
               </div>
             </article>
             <div class="pagination">
-              <a class="pagination__button" href="">назад</a>
+              <a class="pagination__button pagination__button--disabled" href="">Назад</a>
               <ul class="unstyled-list pagination__list">
                 <li class="pagination__item"><a class="pagination__link pagination__link--active" href="">1</a></li>
                 <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
                 <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
               </ul>
-              <a class="pagination__button" href="">вперед</a>
+              <a class="pagination__button" href="">Вперед</a>
             </div>
           </div>
         </div>

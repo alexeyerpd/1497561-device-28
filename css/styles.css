@@ -6,14 +6,16 @@
     --basic-half-grey: #7e7e7e;
     --basic-grey-darken: #dcdcdc;
     --basic-grey-light: #e5e5e5;
-
-
+    
+    
     --special-yellow: #f7e296;
     --special-yellow-dark: #f0c52e;
     --special-green: #91c92f;
     --special-smoke-white: #f2f2f2;
     --special-smoke-white-dark: #eaeaea;
     --special-pink: #f6dada;
+    --special-grey-light: #ebebeb;
+    --special-grey-dark: #d9d9d9;
 
     --special-white-opacity-1: rgba(255, 255, 255, .1);
     --special-white-opacity-3: rgba(255, 255, 255, .3);
@@ -652,6 +654,13 @@ a { text-decoration: none; }
     text-transform: uppercase;
 }
 
+/* Filter(catalog) */
+
+.filter__input:disabled,
+.filter__input:disabled + .filter__label {
+    opacity: .25;
+}
+
 .catalog-content__image-wrap {
     background-color: var(--basic-grey-light);
 }
@@ -716,10 +725,22 @@ a { text-decoration: none; }
 
     text-transform: uppercase;
 
-    background-color: var(--basic-grey-light);
+    background-color: var(--special-grey-light);
 }
 
-.pagination__button {}
+.pagination__button {
+    display: inline-block;
+    padding: 25px 30px;
+}
+
+.pagination__button:hover,
+.pagination__button:focus {
+    background-color: var(--special-grey-dark);
+}
+
+.pagination__button:active {
+    color: var(--special-black-opacity-3);
+}
 
 .pagination__list {}
 
