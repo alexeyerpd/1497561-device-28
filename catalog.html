@@ -7,42 +7,59 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="header">
-      <a href="index.html" class="logo">
-        <h1>device</h1>
+    <header class="header size-strict">
+      <a href="index.html" class="header__logo logo">
+        <h1 class="visually-hidden">Device</h1>
+        <svg width="163" height="35" viewBox="0 0 163 35" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.702054V34.3021H13.381C15.5624 34.3554 17.7309 33.954 19.7487 33.1235C21.7665 32.293 23.5892 31.0515 25.101 29.4781C26.6506 27.9008 27.8665 26.0274 28.6761 23.9697C29.4857 21.9121 29.8724 19.7124 29.813 17.5021C29.8724 15.2917 29.4857 13.092 28.6761 11.0344C27.8665 8.97675 26.6506 7.10336 25.101 5.52605C23.5891 3.95276 21.7663 2.71136 19.7486 1.88085C17.7308 1.05034 15.5623 0.648895 13.381 0.702054H-0.151001ZM7.582 26.9101V8.09105H13.382C14.5845 8.04315 15.7838 8.24682 16.903 8.68901C18.0223 9.13121 19.0369 9.80221 19.882 10.6591C20.7304 11.5767 21.3875 12.6542 21.8149 13.8286C22.2422 15.003 22.4313 16.2508 22.371 17.4991C22.4313 18.7474 22.2423 19.9952 21.8149 21.1696C21.3876 22.344 20.7305 23.4215 19.882 24.3391C19.0371 25.1961 18.0225 25.8672 16.9032 26.3094C15.7839 26.7517 14.5845 26.9552 13.382 26.9071H7.582V26.9101ZM42.382 20.9581H54.464V13.6581H42.378V8.09105H55.669V0.702054H34.645V34.3021H55.91V26.9101H42.378V20.9581H42.382ZM78.725 34.3021L89.744 0.702054H81.286L73.795 25.4221L66.304 0.702054H57.847L68.866 34.3021H78.725ZM93.125 34.3021H100.858V0.702054H93.125V34.3021ZM131.74 32.8861C134.233 31.574 136.321 29.6076 137.781 27.1981L131.111 23.3581C130.381 24.659 129.279 25.7121 127.946 26.3821C126.505 27.1263 124.903 27.5041 123.282 27.4821C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.7461C115.195 23.7792 114.489 22.6394 114.028 21.3943C113.568 20.1492 113.362 18.8242 113.423 17.4981C113.362 16.1719 113.568 14.8469 114.028 13.6018C114.489 12.3567 115.195 11.2169 116.105 10.2501C117.048 9.32428 118.173 8.60339 119.408 8.13258C120.643 7.66177 121.962 7.45119 123.282 7.51405C124.893 7.49104 126.486 7.86178 127.921 8.59405C129.263 9.27186 130.373 10.3327 131.111 11.6421L137.781 7.80205C136.294 5.39752 134.191 3.43384 131.691 2.11405C129.109 0.72096 126.216 0.0027445 123.282 0.0260544C113.503 -0.245946 105.485 7.71705 105.691 17.4981C105.483 27.2791 113.5 35.2451 123.279 34.9741C126.229 35.0013 129.138 34.2831 131.737 32.8861H131.74ZM149.621 20.9581H161.703V13.6581H149.618V8.09105H162.908V0.702054H141.885V34.3021H163.15V26.9101H149.618V20.9581H149.621Z" fill="#F0C52E"/>
+        </svg>
       </a>
-      <section class="search">
-        <h2 class="visually-hidden">Поиск</h2>
-        <form action="http://test.ru" method="GET" class="search__form">
-          <label class="search__label" for="search"></label> <!-- стилями добавлю иконку -->
-          <input id="search" class="search__input" type="text" name="search" placeholder="Поиск по сайту">
-          <button type="button" class="search__button">Найти</button>
-          <div class="search__divide"></div>
-        </form>
-      </section>
-      <section class="header-menu menu">
-        <h2 class="visually-hidden">Системные</h2>
-        <ul class="unstyled-list header-menu__list menu__list">
-          <li class="header-menu__item">
-            <a class="header-menu__link effect-1" href="blank.html">Валентин Петухов</a>
-            <button class="menu__button effect-1" type="button">Выйти</button> <!-- -->
-          </li>
-          <li class="header-menu__item"><a class="header-menu__link effect-1" href="blank.html">Сравнить</a></li>
-          <li class="header-menu__item"><a class="header-menu__link effect-1" href="blank.html">Корзина</a></li>
-        </ul>
-      </section>
-      <section class="header-nav">
+      <div class="header__block">
+        <section class="search">
+          <h2 class="visually-hidden">Поиск</h2>
+          <form action="http://test.ru" method="GET" class="search__form">
+            <label class="search__label" for="search"></label> <!-- стилями добавлю иконку -->
+            <input id="search" class="search__input" type="text" name="search" placeholder="Поиск по сайту">
+            <button type="button" class="search__button">Найти</button>
+            <div class="search__divide"></div>
+          </form>
+        </section>
+        <section class="header-menu menu">
+          <h2 class="visually-hidden">Системные</h2>
+          <ul class="unstyled-list header-menu__list menu__list">
+            <li class="header-menu__item">
+              <a class="header-menu__link effect-1" href="blank.html">Валентин Петухов</a>
+              <button class="menu__button effect-1" type="button">Выйти</button> <!-- -->
+            </li>
+            <li class="header-menu__item"><a class="header-menu__link effect-1" href="blank.html">Сравнить</a></li>
+            <li class="header-menu__item"><a class="header-menu__link effect-1" href="blank.html">Корзина</a></li>
+          </ul>
+        </section>  
+      </div>
+      <section class="header-nav header__block">
         <div class="header-catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
-          <a class="header-catalog__link effect-1" href="catalog.html">Каталог товаров</a> 
+          <a class="header-catalog__link">Каталог товаров</a> 
           <div class="popup header-catalog__popup">
-            <ul class="unstyled-list popup__list">
-              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Виртуальная реальность</a></li>
-              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Моноподы для селфи</a></li>
-              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Экшн-камеры</a></li>
-              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Фитнес-браслеты</a></li>
-              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Умные часы</a></li>
-              <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Квадрокоптер</a></li>
+            <ul class="unstyled-list popup__block-list size-strict">
+              <li class="popup__block-item">
+                <ul class="unstyled-list popup__list">
+                  <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Виртуальная реальность</a></li>
+                  <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Моноподы для селфи</a></li>
+                  <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Экшн-камеры</a></li>
+                </ul>
+              </li>
+              <li class="popup__block-item">
+                <ul class="unstyled-list popup__list">
+                  <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Фитнес-браслеты</a></li>
+                  <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Умные часы</a></li>
+                </ul>
+              </li>
+              <li class="popup__block-item">
+                <ul class="unstyled-list popup__list">
+                  <li class="popup__item"><a class="popup__link effect-1" href="catalog.html">Квадрокоптер</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -57,7 +74,7 @@
       </section>
     </header>
     <main>
-      <section class="breadcrumbs">
+      <section class="breadcrumbs size-strict">
         <h2 class="breadcrumbs__category">Моноподы для селфи</h2>
         <ul class="unstyled-list breadcrumbs__list">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="blank.html">Главная</a></li>
@@ -68,79 +85,107 @@
       <section class="catalog">
         <header class="catalog-header">
             <h2 class="visually-hidden">Меню</h2>
-            <div class="catalog-header__wrap-title">
+            <div class="catalog-header__filter">
               <h3 class="catalog-header__title">Фильтр:</h3>
             </div>
-            <div>
+            <div class="catalog-header__sort">
               <h3 class="catalog-header__title">Сортировка:</h3>
-              <ul class="unstyled-list catalog-header__list">
-                <li class="catalog-header__item catalog-header__item--active">По цене</li>
-                <li class="catalog-header__item">По типу</li>
-                <li class="catalog-header__item">По популярности</li>
+              <ul class="unstyled-list catalog-header__sort-list">
+                <li class="catalog-header__sort-item filter-text-effect-1 catalog-header__sort-item--active">По цене</li>
+                <li class="catalog-header__sort-item filter-text-effect-1">По типу</li>
+                <li class="catalog-header__sort-item filter-text-effect-1">По популярности</li>
               </ul>
-              <div></div>
+              <div class="catalog-header__direction direction-toggler">
+                <div class="direction-toggler__element direction-toggler__element--up"></div>
+                <div class="direction-toggler__element direction-toggler__element--down direction-toggler__element--current"></div>
+              </div>
             </div>
         </header>
         <div class="catalog-main">
-          <form class="catalog-filter">
-            <ul class="unstyled-list catalog-filter__list">
-              <li class="catalog-filter__item">
-                <h3 class="catalog-filter__title">Стоимость</h3>
-                <div>
-                  <div class="range">
-                    <div class="range__track">
-                      <button class="range__left" type="button">
-                        <output class="range__output-left"></output>
-                      </button>
-                      <div class="range__indicator"></div>
-                      <button class="range__right" type="button">
-                        <output class="range__output-right"></output>
-                      </button>
+          <div class="catalog-filter__wrap">
+            <form class="catalog-filter">
+              <ul class="unstyled-list catalog-filter__list">
+                <li class="catalog-filter__item">
+                  <h3 class="catalog-filter__title">Стоимость</h3>
+                  <div>
+                    <div class="range">
+                      <div class="range__track">
+                        <button class="range__left" type="button">
+                          <output class="range__output-left">0</output>
+                        </button>
+                        <div class="range__indicator"></div>
+                        <button class="range__right" type="button">
+                          <output class="range__output-right">5000</output>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="catalog-filter__item filter">
-                <h3 class="catalog-filter__title">Цвет</h3>
-                <ul class="unstyled-list filter__list">
-                  <li class="filter__item">
-                    <input id="color-black" class="filter__input" type="checkbox" name="color" value="black">
-                    <label for="color-black" class="filter__label">Черный</label>
-                  </li>
-                  <li class="filter__item">
-                    <input id="color-white" class="filter__input" type="checkbox" name="color" value="white">
-                    <label for="color-white" class="filter__label">Белый</label>
-                  </li>
-                  <li class="filter__item">
-                    <input id="color-blue" class="filter__input" type="checkbox" name="color" value="blue">
-                    <label for="color-blue" class="filter__label">Синий</label>
-                  </li>
-                  <li class="filter__item">
-                    <input id="color-red" class="filter__input" type="checkbox" name="color" value="red">
-                    <label for="color-red" class="filter__label">Красный</label>
-                  </li>
-                  <li class="filter__item">
-                    <input id="color-pink" class="filter__input" type="checkbox" name="color" value="pink" disabled>
-                    <label for="color-pink" class="filter__label">Розовый</label>
-                  </li>
-                </ul>
-              </li>
-              <li class="catalog-filter__item filter">
-                <h3 class="catalog-filter__title">Bluetooth</h3>
-                <input id="bluetooth-yes" class="filter__input" type="radio" name="bluetooth" value="yes" disabled>
-                <label for="bluetooth-yes" class="filter__label">Есть</label>
-                <input id="bluetooth-no" class="filter__input" type="radio" name="bluetooth" value="no">
-                <label for="bluetooth-no" class="filter__label">Нет</label>
-              </li>
-            </ul>
-            <button class="btn catalog-filter__button effect-2" type="button">Показать</button>
-          </form>
+                </li>
+                <li class="catalog-filter__item filter">
+                  <h3 class="catalog-filter__title">Цвет</h3>
+                  <ul class="unstyled-list filter__list">
+                    <li class="filter__item">
+                      <div class="checkbox-field">
+                        <input id="color-black" class="filter__input checkbox-field__input" type="checkbox" name="color" value="black">
+                        <span class="checkbox-field__view"></span>
+                        <label for="color-black" class="filter__label">Черный</label>
+                      </div>
+                    </li>
+                    <li class="filter__item">
+                      <div class="checkbox-field">
+                        <input id="color-white" class="filter__input checkbox-field__input" type="checkbox" name="color" value="white">
+                        <span class="checkbox-field__view"></span>
+                        <label for="color-white" class="filter__label">Белый</label>
+                      </div>
+                    </li>
+                    <li class="filter__item">
+                      <div class="checkbox-field">
+                        <input id="color-blue" class="filter__input checkbox-field__input" type="checkbox" name="color" value="blue">
+                        <span class="checkbox-field__view"></span>
+                        <label for="color-blue" class="filter__label">Синий</label>
+                      </div>
+                    </li>
+                    <li class="filter__item">
+                      <div class="checkbox-field">
+                        <input id="color-red" class="filter__input checkbox-field__input" type="checkbox" name="color" value="red">
+                        <span class="checkbox-field__view"></span>
+                        <label for="color-red" class="filter__label">Красный</label>
+                      </div>
+                    </li>
+                    <li class="filter__item">
+                      <div class="checkbox-field">
+                        <input id="color-pink" class="filter__input checkbox-field__input" type="checkbox" name="color" value="pink" disabled>
+                        <span class="checkbox-field__view"></span>
+                        <label for="color-pink" class="filter__label">Розовый</label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="catalog-filter__item filter">
+                  <h3 class="catalog-filter__title">Bluetooth</h3>
+                  <div class="radiobox-field">
+                    <input id="bluetooth-yes" class="filter__input radiobox-field__input" type="radio" name="bluetooth" value="yes">
+                    <span class="radiobox-field__view"></span>
+                    <label for="bluetooth-yes" class="filter__label">Есть</label>
+                  </div>
+                  <div class="radiobox-field">
+                    <input id="bluetooth-no" class="filter__input radiobox-field__input" type="radio" name="bluetooth" value="no">
+                    <span class="radiobox-field__view"></span>
+                    <label for="bluetooth-no" class="filter__label">Нет</label>
+                  </div>
+                </li>
+              </ul>
+              <button class="btn catalog-filter__button effect-2" type="button">Показать</button>
+            </form>
+          </div>
           <div class="catalog-content">
             <article class="catalog-content__item">
               <div class="catalog-content__image-wrap">
                 <img class="catalog-content__image" src="img/item_1_1.jpg" alt="img">
-                <button class="btn catalog-content__button-basket effect-2" type="button">в корзину</button>
-                <button class="catalog-content__button-compate effect-5" type="button">Добавить к сравнению</button>
+                <div class="catalog-content__buttons-wrap">
+                  <button class="btn catalog-content__button-basket effect-2" type="button">В корзину</button>
+                  <button class="catalog-content__button-compate effect-5" type="button">Добавить к сравнению</button>
+                </div>
               </div>
               <div class="catalog-content__description">
                 <h3 class="catalog-content__title">Любительская селфи-палка</h3>
@@ -150,8 +195,10 @@
             <article class="catalog-content__item">
               <div class="catalog-content__image-wrap">
                 <img class="catalog-content__image" src="img/item_1_2.jpg" alt="img">
-                <button class="btn catalog-content__button-basket effect-2" type="button">в корзину</button>
-                <button class="catalog-content__button-compate effect-5" type="button">Добавить к сравнению</button>
+                <div class="catalog-content__buttons-wrap">
+                  <button class="btn catalog-content__button-basket effect-2" type="button">в корзину</button>
+                  <button class="catalog-content__button-compate effect-5" type="button">Добавить к сравнению</button>
+                </div>
               </div>
               <div class="catalog-content__description">
                 <h3 class="catalog-content__title">Профессиональная селфи-палка</h3>
@@ -161,8 +208,10 @@
             <article class="catalog-content__item">
               <div class="catalog-content__image-wrap">
                 <img class="catalog-content__image" src="img/item_1_3.jpg" alt="img">
-                <button class="btn catalog-content__button-basket effect-2" type="button">в корзину</button>
-                <button class="catalog-content__button-compate effect-5" type="button">Добавить к сравнению</button>
+                <div class="catalog-content__buttons-wrap">
+                  <button class="btn catalog-content__button-basket effect-2" type="button">в корзину</button>
+                  <button class="catalog-content__button-compate effect-5" type="button">Добавить к сравнению</button>
+                </div>
               </div>
               <div class="catalog-content__description">
                 <h3 class="catalog-content__title">Непотопляемая селфи-палка</h3>
@@ -173,8 +222,10 @@
               <div class="catalog-content__new">New</div>
               <div class="catalog-content__image-wrap">
                 <img class="catalog-content__image" src="img/item_1_4.jpg" alt="img">
-                <button class="btn catalog-content__button-basket effect-2" type="button">в корзину</button>
-                <button class="catalog-content__button-compate effect-5" type="button">Добавить к сравнению</button>
+                <div class="catalog-content__buttons-wrap">
+                  <button class="btn catalog-content__button-basket effect-2" type="button">в корзину</button>
+                  <button class="catalog-content__button-compate effect-5" type="button">Добавить к сравнению</button>
+                </div>
               </div>
               <div class="catalog-content__description">
                 <h3 class="catalog-content__title">Селфи-палка «Следуй за мной»</h3>
@@ -184,9 +235,9 @@
             <div class="pagination">
               <a class="pagination__button pagination__button--disabled" href="">Назад</a>
               <ul class="unstyled-list pagination__list">
-                <li class="pagination__item"><a class="pagination__link pagination__link--active" href="">1</a></li>
-                <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
-                <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
+                <li class="pagination__item"><a class="pagination__link filter-text-effect-1 pagination__link--active" href="">1</a></li>
+                <li class="pagination__item"><a class="pagination__link filter-text-effect-1" href="">2</a></li>
+                <li class="pagination__item"><a class="pagination__link filter-text-effect-1" href="">3</a></li>
               </ul>
               <a class="pagination__button" href="">Вперед</a>
             </div>
@@ -195,8 +246,7 @@
       </section>
     </main>
     <footer class="footer">
-      <h2>device</h2>
-      <div class="footer-menu">
+      <div class="footer__wrap size-strict">
         <ul class="unstyled-list footer-menu__list menu__list">
           <li class="footer-menu__item">
             <a class="footer-menu__link effect-4" href="blank.html">Валентин Петухов</a>
@@ -213,24 +263,30 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="footer-nav">
-        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
-        <ul class="unstyled-list footer-nav__list">
-          <li class="footer-nav__item"><a class="footer-nav__link" href="blank.html">доставка</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="blank.html">гарантия</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="blank.html">кредит</a></li>
-        </ul>
-        <p class="footer__tel">Тел.: <a class="footer__tel-link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-      </div>
-      <div>
-        <div class="footer__decorate"></div>
-        <ul class="unstyled-list footer-social__list">
-          <li class="footer-social__item"><a class="footer-social__link" href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook"></a></li> <!-- эффект через свг -->
-          <li class="footer-social__item"><a class="footer-social__link" href="https://www.instagram.com/"><img src="img/instagram.svg" alt="instagram"></a></li>
-          <li class="footer-social__item"><a class="footer-social__link" href="https://twitter.com/"><img src="img/twitter.svg" alt="twitter"></a></li>
-        </ul>
-        <a class="footer__logo" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34"></a>
+        <a href="index.html" class="footer__logo logo">
+          <h2 class="visually-hidden">Device</h2>
+          <svg width="163" height="35" viewBox="0 0 163 35" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.702054V34.3021H13.381C15.5624 34.3554 17.7309 33.954 19.7487 33.1235C21.7665 32.293 23.5892 31.0515 25.101 29.4781C26.6506 27.9008 27.8665 26.0274 28.6761 23.9697C29.4857 21.9121 29.8724 19.7124 29.813 17.5021C29.8724 15.2917 29.4857 13.092 28.6761 11.0344C27.8665 8.97675 26.6506 7.10336 25.101 5.52605C23.5891 3.95276 21.7663 2.71136 19.7486 1.88085C17.7308 1.05034 15.5623 0.648895 13.381 0.702054H-0.151001ZM7.582 26.9101V8.09105H13.382C14.5845 8.04315 15.7838 8.24682 16.903 8.68901C18.0223 9.13121 19.0369 9.80221 19.882 10.6591C20.7304 11.5767 21.3875 12.6542 21.8149 13.8286C22.2422 15.003 22.4313 16.2508 22.371 17.4991C22.4313 18.7474 22.2423 19.9952 21.8149 21.1696C21.3876 22.344 20.7305 23.4215 19.882 24.3391C19.0371 25.1961 18.0225 25.8672 16.9032 26.3094C15.7839 26.7517 14.5845 26.9552 13.382 26.9071H7.582V26.9101ZM42.382 20.9581H54.464V13.6581H42.378V8.09105H55.669V0.702054H34.645V34.3021H55.91V26.9101H42.378V20.9581H42.382ZM78.725 34.3021L89.744 0.702054H81.286L73.795 25.4221L66.304 0.702054H57.847L68.866 34.3021H78.725ZM93.125 34.3021H100.858V0.702054H93.125V34.3021ZM131.74 32.8861C134.233 31.574 136.321 29.6076 137.781 27.1981L131.111 23.3581C130.381 24.659 129.279 25.7121 127.946 26.3821C126.505 27.1263 124.903 27.5041 123.282 27.4821C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.7461C115.195 23.7792 114.489 22.6394 114.028 21.3943C113.568 20.1492 113.362 18.8242 113.423 17.4981C113.362 16.1719 113.568 14.8469 114.028 13.6018C114.489 12.3567 115.195 11.2169 116.105 10.2501C117.048 9.32428 118.173 8.60339 119.408 8.13258C120.643 7.66177 121.962 7.45119 123.282 7.51405C124.893 7.49104 126.486 7.86178 127.921 8.59405C129.263 9.27186 130.373 10.3327 131.111 11.6421L137.781 7.80205C136.294 5.39752 134.191 3.43384 131.691 2.11405C129.109 0.72096 126.216 0.0027445 123.282 0.0260544C113.503 -0.245946 105.485 7.71705 105.691 17.4981C105.483 27.2791 113.5 35.2451 123.279 34.9741C126.229 35.0013 129.138 34.2831 131.737 32.8861H131.74ZM149.621 20.9581H161.703V13.6581H149.618V8.09105H162.908V0.702054H141.885V34.3021H163.15V26.9101H149.618V20.9581H149.621Z" fill="#F0C52E"/>
+          </svg>
+        </a>
+        <div class="footer__contacts-services">
+          <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+          <ul class="unstyled-list footer-nav__list">
+            <li class="footer-nav__item"><a class="footer-nav__link" href="blank.html">доставка</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="blank.html">гарантия</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="blank.html">кредит</a></li>
+          </ul>
+          <p class="footer__tel">Тел.: <a class="footer__tel-link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+        </div>
+        <div class="footer__bottom-block">
+          <div class="footer__decorate"></div>
+          <ul class="unstyled-list footer-social__list">
+            <li class="footer-social__item"><a class="footer-social__link" href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook"></a></li> <!-- эффект через свг -->
+            <li class="footer-social__item"><a class="footer-social__link" href="https://www.instagram.com/"><img src="img/instagram.svg" alt="instagram"></a></li>
+            <li class="footer-social__item"><a class="footer-social__link" href="https://twitter.com/"><img src="img/twitter.svg" alt="twitter"></a></li>
+          </ul>
+          <a class="footer__partner-logo" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34"></a>
+        </div>
       </div>
     </footer>
   </body>
