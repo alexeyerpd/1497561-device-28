@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Алексей Почекутов](https://up.htmlacademy.ru/htmlcss/28/user/1497561). 
+* Студент: [Алексей Почекутов](https://up.htmlacademy.ru/htmlcss/28/user/1497561).
 * Наставник: [Андрей Фидельман](https://up.htmlacademy.ru/htmlcss/28/user/773165).
 
 ---
