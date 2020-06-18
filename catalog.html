@@ -14,8 +14,8 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.702054V34.3021H13.381C15.5624 34.3554 17.7309 33.954 19.7487 33.1235C21.7665 32.293 23.5892 31.0515 25.101 29.4781C26.6506 27.9008 27.8665 26.0274 28.6761 23.9697C29.4857 21.9121 29.8724 19.7124 29.813 17.5021C29.8724 15.2917 29.4857 13.092 28.6761 11.0344C27.8665 8.97675 26.6506 7.10336 25.101 5.52605C23.5891 3.95276 21.7663 2.71136 19.7486 1.88085C17.7308 1.05034 15.5623 0.648895 13.381 0.702054H-0.151001ZM7.582 26.9101V8.09105H13.382C14.5845 8.04315 15.7838 8.24682 16.903 8.68901C18.0223 9.13121 19.0369 9.80221 19.882 10.6591C20.7304 11.5767 21.3875 12.6542 21.8149 13.8286C22.2422 15.003 22.4313 16.2508 22.371 17.4991C22.4313 18.7474 22.2423 19.9952 21.8149 21.1696C21.3876 22.344 20.7305 23.4215 19.882 24.3391C19.0371 25.1961 18.0225 25.8672 16.9032 26.3094C15.7839 26.7517 14.5845 26.9552 13.382 26.9071H7.582V26.9101ZM42.382 20.9581H54.464V13.6581H42.378V8.09105H55.669V0.702054H34.645V34.3021H55.91V26.9101H42.378V20.9581H42.382ZM78.725 34.3021L89.744 0.702054H81.286L73.795 25.4221L66.304 0.702054H57.847L68.866 34.3021H78.725ZM93.125 34.3021H100.858V0.702054H93.125V34.3021ZM131.74 32.8861C134.233 31.574 136.321 29.6076 137.781 27.1981L131.111 23.3581C130.381 24.659 129.279 25.7121 127.946 26.3821C126.505 27.1263 124.903 27.5041 123.282 27.4821C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.7461C115.195 23.7792 114.489 22.6394 114.028 21.3943C113.568 20.1492 113.362 18.8242 113.423 17.4981C113.362 16.1719 113.568 14.8469 114.028 13.6018C114.489 12.3567 115.195 11.2169 116.105 10.2501C117.048 9.32428 118.173 8.60339 119.408 8.13258C120.643 7.66177 121.962 7.45119 123.282 7.51405C124.893 7.49104 126.486 7.86178 127.921 8.59405C129.263 9.27186 130.373 10.3327 131.111 11.6421L137.781 7.80205C136.294 5.39752 134.191 3.43384 131.691 2.11405C129.109 0.72096 126.216 0.0027445 123.282 0.0260544C113.503 -0.245946 105.485 7.71705 105.691 17.4981C105.483 27.2791 113.5 35.2451 123.279 34.9741C126.229 35.0013 129.138 34.2831 131.737 32.8861H131.74ZM149.621 20.9581H161.703V13.6581H149.618V8.09105H162.908V0.702054H141.885V34.3021H163.15V26.9101H149.618V20.9581H149.621Z" fill="#F0C52E"/>
         </svg>
       </a>
-      <div class="header__block offset-effect">
-        <section class="search">
+      <div class="row header__block offset-effect">
+        <section class="col-6 search">
           <h2 class="visually-hidden">Поиск</h2>
           <form action="http://test.ru" method="GET" class="search__form">
             <label class="search__label" for="search"></label>
@@ -24,7 +24,7 @@
             <div class="search__divide"></div>
           </form>
         </section>
-        <section class="header-menu menu">
+        <section class="col-6 header-menu menu">
           <h2 class="visually-hidden">Системные</h2>
           <ul class="unstyled-list header-menu__list menu__list">
             <li class="header-menu__item">
@@ -38,7 +38,7 @@
             </li>
             <li class="header-menu__item">
               <a class="header-menu__link text-effect-primary" href="blank.html">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header-menu__link-image" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.916748 3.36667H2.66675V9.08334H0.916748V3.36667ZM4.18342 0.916672H5.81675V9.08334H4.18342V0.916672ZM7.45008 5.58334H9.08342V9.08334H7.45008V5.58334Z" fill="black"/>
                 </svg>
                 Сравнить
@@ -46,7 +46,7 @@
             </li>
             <li class="header-menu__item">
               <a class="header-menu__link text-effect-primary" href="blank.html">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header-menu__link-image" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z" fill="#231F20"/>
                   <path d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z" fill="#231F20"/>
                 </svg>
@@ -56,11 +56,11 @@
           </ul>
         </section>  
       </div>
-      <section class="header-nav header__block offset-effect">
-        <div class="header-catalog">
+      <section class="row header-nav header__block offset-effect">
+        <div class="col-6 header-catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <div class="header-catalog__link-wrap">
-            <a class="header-catalog__link text-effect-primary">Каталог товаров</a> 
+            <a class="header-catalog__link text-effect-primary" href="catalog.html">Каталог товаров</a> 
             <svg class="header-catalog__img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.7 6.9V9.1H9.10005V15.7H6.90005V9.1H0.300049V6.9H6.90005V0.300003H9.10005V6.9H15.7Z" fill="black" fill-opacity="0.3"/>
             </svg>
@@ -89,7 +89,7 @@
             </ul>
           </div>
         </div>
-        <div class="navigation">
+        <div class="col-6 navigation">
           <h2 class="visually-hidden">Навигация</h2>
           <ul class="unstyled-list navigation__list">
             <li class="navigation__item"><a href="blank.html" class="navigation__link text-effect-primary">Доставка</a></li>
@@ -139,11 +139,10 @@
               <ul class="unstyled-list catalog-filter__list">
                 <li class="catalog-filter__item">
                   <h3 class="catalog-filter__title">Стоимость</h3>
-                  <div>
                     <div class="range">
                       <div class="range__track">
                         <button class="range__left" type="button">
-                          <output class="range__output-left">0</output>
+                          <output class="range__output-left">от 0</output>
                         </button>
                         <div class="range__indicator"></div>
                         <button class="range__right" type="button">
@@ -151,7 +150,6 @@
                         </button>
                       </div>
                     </div>
-                  </div>
                 </li>
                 <li class="catalog-filter__item filter">
                   <h3 class="catalog-filter__title">Цвет</h3>
@@ -211,59 +209,64 @@
             </form>
           </div>
           <div class="catalog-content">
-            <article class="catalog-content__item">
-              <div class="catalog-content__image-wrap">
-                <img class="catalog-content__image" src="img/item_1_1.jpg" alt="img">
-                <div class="catalog-content__buttons-wrap">
-                  <button class="btn catalog-content__button-basket link-btn-effect-primary" type="button">В корзину</button>
-                  <button class="catalog-content__button-compate" type="button">Добавить к сравнению</button>
+            <div class="catalog-content__wrap">
+              <article class="catalog-content__item">
+                <div class="catalog-content__image-wrap">
+                  <img class="catalog-content__image" src="img/item_1_1.jpg" alt="img">
+                  <div class="catalog-content__buttons-wrap">
+                    <button class="btn catalog-content__button-basket link-btn-effect-primary" type="button">В корзину</button>
+                    <button class="catalog-content__button-compate" type="button">Добавить к сравнению</button>
+                  </div>
                 </div>
-              </div>
-              <div class="catalog-content__description">
-                <h3 class="catalog-content__title">Любительская селфи-палка</h3>
-                <p class="catalog-content__price">500 руб.</p>
-              </div>
-            </article>
-            <article class="catalog-content__item">
-              <div class="catalog-content__image-wrap">
-                <img class="catalog-content__image" src="img/item_1_2.jpg" alt="img">
-                <div class="catalog-content__buttons-wrap">
-                  <button class="btn catalog-content__button-basket link-btn-effect-primary" type="button">в корзину</button>
-                  <button class="catalog-content__button-compate" type="button">Добавить к сравнению</button>
+                <div class="catalog-content__description">
+                  <h3 class="catalog-content__title">Любительская селфи-палка</h3>
+                  <p class="catalog-content__price">500 руб.</p>
                 </div>
-              </div>
-              <div class="catalog-content__description">
-                <h3 class="catalog-content__title">Профессиональная селфи-палка</h3>
-                <p class="catalog-content__price">1500 руб.</p>
-              </div>
-            </article>
-            <article class="catalog-content__item">
-              <div class="catalog-content__image-wrap">
-                <img class="catalog-content__image" src="img/item_1_3.jpg" alt="img">
-                <div class="catalog-content__buttons-wrap">
-                  <button class="btn catalog-content__button-basket link-btn-effect-primary" type="button">в корзину</button>
-                  <button class="catalog-content__button-compate" type="button">Добавить к сравнению</button>
+              </article>
+              <article class="catalog-content__item">
+                <div class="catalog-content__image-wrap">
+                  <img class="catalog-content__image" src="img/item_1_2.jpg" alt="img">
+                  <div class="catalog-content__buttons-wrap">
+                    <button class="btn catalog-content__button-basket link-btn-effect-primary" type="button">в корзину</button>
+                    <button class="catalog-content__button-compate" type="button">Добавить к сравнению</button>
+                  </div>
                 </div>
-              </div>
-              <div class="catalog-content__description">
-                <h3 class="catalog-content__title">Непотопляемая селфи-палка</h3>
-                <p class="catalog-content__price">2500 руб.</p>
-              </div>
-            </article>
-            <article class="catalog-content__item">
-              <div class="catalog-content__new">New</div>
-              <div class="catalog-content__image-wrap">
-                <img class="catalog-content__image" src="img/item_1_4.jpg" alt="img">
-                <div class="catalog-content__buttons-wrap">
-                  <button class="btn catalog-content__button-basket link-btn-effect-primary" type="button">в корзину</button>
-                  <button class="catalog-content__button-compate" type="button">Добавить к сравнению</button>
+                <div class="catalog-content__description">
+                  <h3 class="catalog-content__title">
+                    Профессиональная<br> 
+                    селфи-палка
+                  </h3>
+                  <p class="catalog-content__price">1500 руб.</p>
                 </div>
-              </div>
-              <div class="catalog-content__description">
-                <h3 class="catalog-content__title">Селфи-палка «Следуй за мной»</h3>
-                <p class="catalog-content__price">500 руб.</p>
-              </div>
-            </article>
+              </article>
+              <article class="catalog-content__item">
+                <div class="catalog-content__image-wrap">
+                  <img class="catalog-content__image" src="img/item_1_3.jpg" alt="img">
+                  <div class="catalog-content__buttons-wrap">
+                    <button class="btn catalog-content__button-basket link-btn-effect-primary" type="button">в корзину</button>
+                    <button class="catalog-content__button-compate" type="button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="catalog-content__description">
+                  <h3 class="catalog-content__title">Непотопляемая селфи-палка</h3>
+                  <p class="catalog-content__price">2500 руб.</p>
+                </div>
+              </article>
+              <article class="catalog-content__item">
+                <div class="catalog-content__new">New</div>
+                <div class="catalog-content__image-wrap">
+                  <img class="catalog-content__image" src="img/item_1_4.jpg" alt="img">
+                  <div class="catalog-content__buttons-wrap">
+                    <button class="btn catalog-content__button-basket link-btn-effect-primary" type="button">в корзину</button>
+                    <button class="catalog-content__button-compate" type="button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="catalog-content__description">
+                  <h3 class="catalog-content__title">Селфи-палка «Следуй за мной»</h3>
+                  <p class="catalog-content__price">500 руб.</p>
+                </div>
+              </article>
+            </div>
             <div class="pagination">
               <a class="pagination__button pagination__button--disabled" href="">Назад</a>
               <ul class="unstyled-list pagination__list">
@@ -307,7 +310,7 @@
             </a>
           </li>
         </ul>
-        <a href="index.html" class="footer__logo logo">
+        <a href="index.html" class="footer__logo">
           <h2 class="visually-hidden">Device</h2>
           <svg class="logo" width="163" height="35" viewBox="0 0 163 35" fill="black" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.702054V34.3021H13.381C15.5624 34.3554 17.7309 33.954 19.7487 33.1235C21.7665 32.293 23.5892 31.0515 25.101 29.4781C26.6506 27.9008 27.8665 26.0274 28.6761 23.9697C29.4857 21.9121 29.8724 19.7124 29.813 17.5021C29.8724 15.2917 29.4857 13.092 28.6761 11.0344C27.8665 8.97675 26.6506 7.10336 25.101 5.52605C23.5891 3.95276 21.7663 2.71136 19.7486 1.88085C17.7308 1.05034 15.5623 0.648895 13.381 0.702054H-0.151001ZM7.582 26.9101V8.09105H13.382C14.5845 8.04315 15.7838 8.24682 16.903 8.68901C18.0223 9.13121 19.0369 9.80221 19.882 10.6591C20.7304 11.5767 21.3875 12.6542 21.8149 13.8286C22.2422 15.003 22.4313 16.2508 22.371 17.4991C22.4313 18.7474 22.2423 19.9952 21.8149 21.1696C21.3876 22.344 20.7305 23.4215 19.882 24.3391C19.0371 25.1961 18.0225 25.8672 16.9032 26.3094C15.7839 26.7517 14.5845 26.9552 13.382 26.9071H7.582V26.9101ZM42.382 20.9581H54.464V13.6581H42.378V8.09105H55.669V0.702054H34.645V34.3021H55.91V26.9101H42.378V20.9581H42.382ZM78.725 34.3021L89.744 0.702054H81.286L73.795 25.4221L66.304 0.702054H57.847L68.866 34.3021H78.725ZM93.125 34.3021H100.858V0.702054H93.125V34.3021ZM131.74 32.8861C134.233 31.574 136.321 29.6076 137.781 27.1981L131.111 23.3581C130.381 24.659 129.279 25.7121 127.946 26.3821C126.505 27.1263 124.903 27.5041 123.282 27.4821C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.7461C115.195 23.7792 114.489 22.6394 114.028 21.3943C113.568 20.1492 113.362 18.8242 113.423 17.4981C113.362 16.1719 113.568 14.8469 114.028 13.6018C114.489 12.3567 115.195 11.2169 116.105 10.2501C117.048 9.32428 118.173 8.60339 119.408 8.13258C120.643 7.66177 121.962 7.45119 123.282 7.51405C124.893 7.49104 126.486 7.86178 127.921 8.59405C129.263 9.27186 130.373 10.3327 131.111 11.6421L137.781 7.80205C136.294 5.39752 134.191 3.43384 131.691 2.11405C129.109 0.72096 126.216 0.0027445 123.282 0.0260544C113.503 -0.245946 105.485 7.71705 105.691 17.4981C105.483 27.2791 113.5 35.2451 123.279 34.9741C126.229 35.0013 129.138 34.2831 131.737 32.8861H131.74ZM149.621 20.9581H161.703V13.6581H149.618V8.09105H162.908V0.702054H141.885V34.3021H163.15V26.9101H149.618V20.9581H149.621Z" fill="#F0C52E"/>
@@ -318,7 +321,7 @@
           <ul class="unstyled-list footer-nav__list">
             <li class="footer-nav__item"><a class="footer-nav__link text-effect-primary" href="blank.html">Доставка</a></li>
             <li class="footer-nav__item"><a class="footer-nav__link text-effect-primary" href="blank.html">Гарантия</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link text-effect-primary" href="blank.html">Кредит</a></li>
+            <li class="footer-nav__item"><a class="footer-nav__link text-effect-primary" href="blank.html">Контакты</a></li>
           </ul>
           <p class="footer__tel">Тел.: <a class="footer__tel-link text-effect-primary" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
         </div>
