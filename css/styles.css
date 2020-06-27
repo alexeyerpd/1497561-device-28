@@ -71,6 +71,11 @@
 
     --box-shadow-1: 0 10px 16px rgba(0, 0, 0, .15);
     --box-shadow-2: 0 10px 16px var(--basic-grey-light);
+
+    --duration-l: .8s;
+    --duration-m: .4s;
+    --duration-x: .3s;
+    --duration-xs: .15s;
 }
 
 @font-face {
@@ -219,6 +224,8 @@ a { text-decoration: none; }
     background-color: transparent;
     border: none;
     outline: none;
+
+    cursor: pointer;
 }
 
 /* Header */
@@ -303,8 +310,10 @@ a { text-decoration: none; }
     right: 0;
     bottom: 0;
 
-    display: none;
+    display: block;
     height: 2px;
+
+    opacity: 0;
 
     background-color: var(--basic-dark);
 }
@@ -319,7 +328,7 @@ a { text-decoration: none; }
 
 .search__button:focus ~ .search__divide,
 .search__input:focus ~ .search__divide {
-    display: block;
+    opacity: 1;
     border-bottom: 1px solid var(--basic-black);
 }
 
@@ -715,17 +724,42 @@ a { text-decoration: none; }
     margin-bottom: 20px;
 }
 
-.services__item:active,
-.services__item--current {
+.services__item {
+    position: relative;
+    z-index: 1;
+}
+
+.services__item::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0px;
+
     background-color: var(--basic-black);
 }
 
-.services__button:active,
+.services__item:active::before,
+.services__item--current::before {
+    width: 100%;
+    animation-name: width-animation;
+    animation-duration: var(--duration-l);
+}
+
 .services__item:active .services__button,
 .services__item--current .services__button {
-    background-color: var(--basic-black);
-    background-image: none;
     color: var(--special-yellow);
+}
+
+.services__item:active .services__button::before,
+.services__item--current .services__button::before {
+    background-color: var(--basic-black);
+    animation-name: width-animation;
+    animation-duration: var(--duration-m);
+}
+
+@keyframes width-animation {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 .services__content {
@@ -1892,22 +1926,54 @@ a { text-decoration: none; }
 
 /* button effects */
 
-.link-btn-effect-primary,
 .link-btn-effect-primary {
-    background-image: linear-gradient(
-        to top, transparent 40%, 
-        var(--special-yellow-dark) 40%, 
-        var(--special-yellow-dark) 59%, 
-        transparent 59% );
+    position: relative;
+    z-index: 1;
 }
 
-.link-btn-effect-primary:hover {
-    background: var(--special-yellow-dark);
+.link-btn-effect-primary::before {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 8px;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: var(--special-yellow-dark);
+
+    animation-name: link-btn-animation-out;
+    animation-duration: var(--duration-xs);
+}
+
+.link-btn-effect-primary:hover::before {
+    animation-name: link-btn-animation-in;
+    animation-duration: var(--duration-x);
+    height: 100%;
+}
+
+.link-btn-effect-primary:focus::before {
+    animation-name: link-btn-animation-in;
+    animation-duration: var(--duration-x);
+    height: 100%;
 }
 
 .link-btn-effect-primary:active {
     color: var(--special-black-opacity-3);
     background-image: linear-gradient(to top, var(--special-yellow-dark), var(--special-yellow-dark));
+}
+
+@keyframes link-btn-animation-in {
+    from { height: 8px; }
+    to { height: 100%; }
+}
+
+@keyframes link-btn-animation-out {
+    from { height: 100%; } 
+    to { height: 8px; }
 }
 
 /* nav effects */
@@ -1985,15 +2051,9 @@ a { text-decoration: none; }
 }
 
 @keyframes show {
-    0% {
-        transform: translateY(-100px);
-    }
-    80% {
-        transform: translateY(30px)
-    }
-    100% {
-        transform: translateY(0);
-    }
+    0% { transform: translateY(-100px); }
+    80% { transform: translateY(30px); }
+    100% { transform: translateY(0); }
 }
 
 .module-error {
@@ -2005,6 +2065,10 @@ a { text-decoration: none; }
     0%, 100% { transform: translateX(0); }
     10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
     20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.transition {
+    transition: src, opacity, .2s;
 }
 
 /* Other effects */
