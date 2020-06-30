@@ -25,7 +25,8 @@ const listeners = [
         mainElement: writeUsModule,
         elementForOpen: btnWriteUs,
         elementForClose: btnCloseWriteUs,
-        className: 'write-us--visible'
+        className: 'write-us--visible',
+        
     },
     {
         evt: 'click',
@@ -70,7 +71,7 @@ btnWriteUs.addEventListener('click', (e) => {
     if (localStorage && localStorage.email) {
         writeUsEmailField.value = localStorage.email;
     }
-})
+});
 
 function clearForm() {
     const fields = [...getElementsBySelector('input', writeUsForm), ...getElementsBySelector('textarea', writeUsForm)];
@@ -117,11 +118,9 @@ function goodsSlider() {
         
                 const activeSliderItem = getElementBySelector('.slider__item--active');
                 activeSliderItem.classList.remove('slider__item--active');
-                activeSliderItem.classList.remove('module-show');
     
                 const nextActiveSliderItem = sliderItems[carouselItemIndex];
                 nextActiveSliderItem.classList.add('slider__item--active');
-                nextActiveSliderItem.classList.add('module-show');
     
                 const carouselItems = getElementsBySelector('.carousel__item', nextActiveSliderItem);
                 removeClassItems(carouselItems, 'carousel__item--active');
@@ -152,10 +151,9 @@ function servicesSlider() {
         
                 removeClassItems('services__item--current');
                 removeClassItems('services__content-item--active');
-                removeClassItems('module-show', services);
 
                 serviceItem.classList.add('services__item--current');
-                contentItems[index].classList.add('services__content-item--active', 'module-show')
+                contentItems[index].classList.add('services__content-item--active')
             });
         });
 }

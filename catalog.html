@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize-min.css">
     <link rel="stylesheet" href="css/styles-min.css">
   </head>
   <body>
@@ -28,11 +29,11 @@
           <h2 class="visually-hidden">Системные</h2>
           <ul class="unstyled-list header-menu__list menu__list">
             <li class="header-menu__item">
-              <a class="header-menu__link text-effect-primary" href="blank.html">
+              <a class="header-menu__link text-effect-primary" href="https://htmlacademy.ru/profile/id1497561">
                 <svg class="header-menu__link-image" width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.49996 0.333328C5.69704 0.333328 6.66663 1.3775 6.66663 2.66666C6.66663 3.95583 5.69704 5 4.49996 5C3.30288 5 2.33329 3.95583 2.33329 2.66666C2.33329 1.3775 3.30288 0.333328 4.49996 0.333328ZM4.49996 9.66666C4.49996 9.66666 8.83329 9.66666 8.83329 8.5C8.83329 7.1 6.72079 5.58333 4.49996 5.58333C2.27913 5.58333 0.166626 7.1 0.166626 8.5C0.166626 9.66666 4.49996 9.66666 4.49996 9.66666Z" fill="black"/>
                 </svg>
-                Валентин Петухов
+                Алексей Почекутов
               </a>
               <button class="menu__button text-effect-primary" type="button">Выйти</button>
             </li>
@@ -135,11 +136,13 @@
         </header>
         <div class="catalog-main">
           <div class="catalog-filter__wrap">
-            <form class="catalog-filter">
+            <form class="catalog-filter" method="POST" action="https://echo.htmlacademy.ru/">
               <ul class="unstyled-list catalog-filter__list">
                 <li class="catalog-filter__item">
                   <h3 class="catalog-filter__title">Стоимость</h3>
                     <div class="range">
+                      <input class="range__min-cost" type="hidden" name="minCost">
+                      <input class="range__max-cost" type="hidden" name="maxCost">
                       <div class="range__track">
                         <button class="range__left" type="button">
                           <output class="range__output-left">от 0</output>
@@ -205,7 +208,7 @@
                   </div>
                 </li>
               </ul>
-              <button class="btn catalog-filter__button link-btn-effect-primary" type="button">Показать</button>
+              <button class="btn catalog-filter__button link-btn-effect-primary" type="submit">Показать</button>
             </form>
           </div>
           <div class="catalog-content">
@@ -350,7 +353,7 @@
               </a>
             </li>
           </ul>
-          <a class="footer__partner-logo" href="https://htmlacademy.ru/">
+          <a class="footer__partner-logo" href="https://up.htmlacademy.ru/htmlcss/28">
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.62 0.0169551L13.472 0L0 1.40827V26.0042L13.473 34L26.903 26.0311L26.945 26.0062V1.40827L13.62 0.0169551ZM25.019 12.095L13.495 5.31992L13.494 5.21619L13.407 5.26606L13.319 5.21021V5.31892L1.925 12.086V3.13869L13.473 1.92989L25.02 3.13869V12.095H25.019ZM13.405 6.76908L24.923 13.4644L20.444 16.0974L13.351 11.8875L13.337 13.2988L19.241 16.8025L18.381 17.3082L13.351 14.3241L13.337 15.7353L17.164 18.0043L16.382 18.526L13.351 16.7437L13.337 18.1529L15.19 19.2411L13.39 20.3192L2.034 13.586L13.405 6.76908ZM1.925 15.0871L13.336 21.8601L13.352 22.9014L5.41 18.1859L5.395 19.5981L13.374 24.3805L13.392 25.4536L5.419 20.7261L5.406 22.1364L13.427 26.9457L13.473 26.9706L21.616 22.1115L21.605 16.9481L25.02 14.9175V24.9121L13.472 31.7659L1.925 24.9131V15.0871Z" fill="#F0C52E"/>
             </svg>

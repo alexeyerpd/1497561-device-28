@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 :root {
     --basic-translate-space: -40px;
     --special-translate-space: -88px;
@@ -194,6 +201,10 @@ a { text-decoration: none; }
 .page-main {
     display: grid;
     grid-template-rows: 
+        -webkit-min-content 
+        1fr 
+        -webkit-min-content;
+    grid-template-rows: 
         min-content 
         1fr 
         min-content;
@@ -288,7 +299,9 @@ a { text-decoration: none; }
     background-color: transparent;
     border: 2px solid var(--basic-dark);
     outline: none;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
 }
 
 .search__input:focus + .search__button:hover, 
@@ -749,8 +762,10 @@ a { text-decoration: none; }
 .services__item:active::before,
 .services__item--current::before {
     width: 100%;
-    animation-name: width-animation;
-    animation-duration: var(--duration-l);
+    -webkit-animation-name: width-animation;
+            animation-name: width-animation;
+    -webkit-animation-duration: var(--duration-l);
+            animation-duration: var(--duration-l);
 }
 
 .services__item:active .services__button,
@@ -761,8 +776,15 @@ a { text-decoration: none; }
 .services__item:active .services__button::before,
 .services__item--current .services__button::before {
     background-color: var(--basic-black);
-    animation-name: width-animation;
-    animation-duration: var(--duration-m);
+    -webkit-animation-name: width-animation;
+            animation-name: width-animation;
+    -webkit-animation-duration: var(--duration-m);
+            animation-duration: var(--duration-m);
+}
+
+@-webkit-keyframes width-animation {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 @keyframes width-animation {
@@ -979,8 +1001,10 @@ a { text-decoration: none; }
 }
 
 .about-site__popup-module:not(.module-hide) {
-    animation-name: map-show;
-    animation-duration: .4s;
+    -webkit-animation-name: map-show;
+            animation-name: map-show;
+    -webkit-animation-duration: .4s;
+            animation-duration: .4s;
 }
 
 .about-site--active .about-site__popup-module {
@@ -994,9 +1018,19 @@ a { text-decoration: none; }
     height: 559px;
 }
 
+@-webkit-keyframes map-show {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 @keyframes map-show {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@-webkit-keyframes map-invisible {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 @keyframes map-invisible {
@@ -1178,13 +1212,18 @@ a { text-decoration: none; }
 .write-us__form {
     display: grid;
     grid-template-rows: 
+        -webkit-min-content 
+        -webkit-min-content 
+        -webkit-min-content;
+    grid-template-rows: 
         min-content 
         min-content 
         min-content;
     grid-template-columns: 1fr 1fr;
 
     row-gap: 32px;
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
 
     margin-top: 17px;
     padding: 0 100px;
@@ -1295,6 +1334,10 @@ a { text-decoration: none; }
 
 .catalog {
     display: grid;
+    grid-template-rows: 
+        -webkit-min-content
+        -webkit-min-content
+        -webkit-min-content;
     grid-template-rows: 
         min-content
         min-content
@@ -1670,7 +1713,9 @@ a { text-decoration: none; }
     border-radius: 50%;
     background-color: #fff;
     transform: translateY(-50%);
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     outline: none;
     border: none;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .18);
@@ -1692,7 +1737,9 @@ a { text-decoration: none; }
 
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
 }
 
 .range__left:focus::after,
@@ -1710,7 +1757,9 @@ a { text-decoration: none; }
     border: 1px solid var(--special-green);
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     box-sizing: border-box;
 }
 
@@ -1740,7 +1789,9 @@ a { text-decoration: none; }
     font-family: var(--font-special);
 
     transform: translateY(100%);
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
 
     background-color: var(--basic-grey-light);
 }
@@ -1758,6 +1809,10 @@ a { text-decoration: none; }
 .catalog-content {
     display: grid;
     grid-template-columns: 72px 760px;
+    grid-template-rows: 
+        -webkit-min-content 
+        -webkit-min-content 
+        79px;
     grid-template-rows: 
         min-content 
         min-content 
@@ -1982,19 +2037,26 @@ a { text-decoration: none; }
 
     background-color: var(--special-yellow-dark);
 
-    animation-name: link-btn-animation-out;
-    animation-duration: var(--duration-xs);
+    -webkit-animation-name: link-btn-animation-out;
+
+            animation-name: link-btn-animation-out;
+    -webkit-animation-duration: var(--duration-xs);
+            animation-duration: var(--duration-xs);
 }
 
 .link-btn-effect-primary:hover::before {
-    animation-name: link-btn-animation-in;
-    animation-duration: var(--duration-x);
+    -webkit-animation-name: link-btn-animation-in;
+            animation-name: link-btn-animation-in;
+    -webkit-animation-duration: var(--duration-x);
+            animation-duration: var(--duration-x);
     height: 100%;
 }
 
 .link-btn-effect-primary:focus::before {
-    animation-name: link-btn-animation-in;
-    animation-duration: var(--duration-x);
+    -webkit-animation-name: link-btn-animation-in;
+            animation-name: link-btn-animation-in;
+    -webkit-animation-duration: var(--duration-x);
+            animation-duration: var(--duration-x);
     height: 100%;
 }
 
@@ -2003,9 +2065,19 @@ a { text-decoration: none; }
     background-image: linear-gradient(to top, var(--special-yellow-dark), var(--special-yellow-dark));
 }
 
+@-webkit-keyframes link-btn-animation-in {
+    from { height: 8px; }
+    to { height: 100%; }
+}
+
 @keyframes link-btn-animation-in {
     from { height: 8px; }
     to { height: 100%; }
+}
+
+@-webkit-keyframes link-btn-animation-out {
+    from { height: 100%; } 
+    to { height: 8px; }
 }
 
 @keyframes link-btn-animation-out {
@@ -2083,8 +2155,16 @@ a { text-decoration: none; }
 /* Animation effects */
 
 .module-show {
-    animation-name: show;
-    animation-duration: .6s;
+    -webkit-animation-name: show;
+            animation-name: show;
+    -webkit-animation-duration: .6s;
+            animation-duration: .6s;
+}
+
+@-webkit-keyframes show {
+    0% { transform: translateY(-100px); }
+    80% { transform: translateY(30px); }
+    100% { transform: translateY(0); }
 }
 
 @keyframes show {
@@ -2094,8 +2174,16 @@ a { text-decoration: none; }
 }
 
 .module-error {
-    animation-name: module-error;
-    animation-duration: .6s;
+    -webkit-animation-name: module-error;
+            animation-name: module-error;
+    -webkit-animation-duration: .6s;
+            animation-duration: .6s;
+}
+
+@-webkit-keyframes module-error {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
 }
 
 @keyframes module-error {
@@ -2105,8 +2193,15 @@ a { text-decoration: none; }
 }
 
 .module-hide {
-    animation-name: module-hide;
-    animation-duration: 2s;
+    -webkit-animation-name: module-hide;
+            animation-name: module-hide;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+}
+
+@-webkit-keyframes module-hide {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 @keyframes module-hide {

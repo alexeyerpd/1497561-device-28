@@ -1,6 +1,9 @@
 const left = document.querySelector('.range__left');
 const right = document.querySelector('.range__right');
 
+const minCost = document.querySelector('.range__min-cost');
+const maxCost = document.querySelector('.range__max-cost');
+
 const outputLeft = document.querySelector('.range__output-left');
 const outputRight = document.querySelector('.range__output-right');
 
@@ -39,6 +42,9 @@ class RangeSlider {
 
         outputLeft.textContent = `от ${from}`;
         outputRight.textContent = `до ${to}`;
+
+        minCost.value = from;
+        maxCost.value = to;
     }
 
     updateIndicator() {
