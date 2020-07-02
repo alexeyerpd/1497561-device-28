@@ -8,7 +8,7 @@ function getElementsBySelector(className, parent = document) {
     return [...parent.querySelectorAll(className)];
 }
 
-const btnWriteUs = getElementBySelector('button.about-site__link-button');
+const btnWriteUs = getElementBySelector('a[data-action=write-us]');
 const writeUsModule = getElementBySelector('.write-us');
 const aboutSiteModule = getElementBySelector('.about-site');
 const btnCloseWriteUs = getElementBySelector('.write-us__button-close');
@@ -46,13 +46,17 @@ listeners.forEach(listener => {
         className, 
     } = listener;
 
-    elementForOpen.addEventListener(evt, () => {
+    elementForOpen.addEventListener(evt, (e) => {
+        e.preventDefault();
+
         if (!mainElement.classList.contains(className)) {
             mainElement.classList.add(className);
         }
     });
 
-    elementForClose.addEventListener(evt, () => {
+    elementForClose.addEventListener(evt, (e) => {
+        e.preventDefault();
+
         if (mainElement.classList.contains(className)) {
             mainElement.classList.remove(className);
             mainElement.classList.remove('module-show');
@@ -62,6 +66,8 @@ listeners.forEach(listener => {
 })
 
 btnWriteUs.addEventListener('click', (e) => {
+    e.preventDefault();
+
     writeUsModule.classList.add('module-show');
     setTimeout(() => {
         writeUsModule.classList.remove('module-show');
@@ -90,8 +96,7 @@ writeUsForm.addEventListener('submit', (e) => {
         }, 600);
     } else {
         localStorage.email = formData.get('email');
-        console.log(`sended: ${fieldsData.reduce((memo, [k, v]) => memo + `${k} - ${v}, `, '').trim()}`)
-        clearForm();
+        e.currentTarget.submit();
     }
 })
 
