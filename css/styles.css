@@ -1122,11 +1122,17 @@ a { text-decoration: none; color:inherit; }
 
 .footer-nav__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     font-weight: var(--font-weight-l);
     font-size: var(--font-size-special-m-l);
     font-family: var(--font-special);
+}
+
+.footer-nav__item,
+.footer-social__item {
+    line-height: 32px;
 }
 
 .footer-nav__item:not(:last-of-type) {
@@ -1160,6 +1166,7 @@ a { text-decoration: none; color:inherit; }
 
 .footer-social__list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-social__item:not(:last-of-type) {
