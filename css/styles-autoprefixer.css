@@ -1083,7 +1083,7 @@ a { text-decoration: none; color:inherit; }
 .footer__wrap {
     display: flex;
     flex-direction: column;
-    padding-bottom: 65px;
+    padding-bottom: 61px;
 }
 
 .footer-menu__list {
@@ -1122,6 +1122,26 @@ a { text-decoration: none; color:inherit; }
     color: var(--special-white-opacity-7);
 }
 
+.footer__block {
+
+}
+
+.footer__item:nth-child(1),
+.footer__item:nth-child(3) {
+    max-width: 300px;
+    flex-grow: 1;
+}
+
+.footer__item:nth-child(2) {
+    max-width: 440px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.footer__item:nth-child(3) {
+    text-align: right;
+}
+
 .footer__contacts-services {
     display: flex;
     justify-content: space-between;
@@ -1144,7 +1164,7 @@ a { text-decoration: none; color:inherit; }
 }
 
 .footer-nav__item:not(:last-of-type) {
-    margin-right: 36px;
+    margin-right: 32px;
 }
 
 .footer-nav__link {
@@ -1163,7 +1183,7 @@ a { text-decoration: none; color:inherit; }
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 50px;
+    margin-top: 52px;
 }
 
 .footer__decorate {
