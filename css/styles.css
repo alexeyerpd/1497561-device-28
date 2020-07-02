@@ -280,6 +280,8 @@ a { text-decoration: none; }
     display: inline-block;
     padding: 15px 17px;
 
+    vertical-align: baseline;
+
     opacity: 0;
     
     font:inherit;
@@ -1203,6 +1205,8 @@ a { text-decoration: none; }
     margin-top: 10px;
     padding: 16px 20px;
 
+    vertical-align: baseline;
+
     font-weight: var(--font-weight-m);
     font-size: var(--font-size-main-s);
     font-family: var(--font-main);
@@ -1921,6 +1925,7 @@ a { text-decoration: none; }
 .pagination__button {
     display: inline-block;
     padding: 25px 30px;
+    vertical-align: baseline;
 }
 
 .pagination__button:hover,
